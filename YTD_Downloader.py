@@ -25,7 +25,7 @@ def verify():
             else:
                   
                   er2=Label(root,text="Invalid URL Entered ✗",fg="red").grid(row=2,column=1)
-                  er2dqw.grid_forget()
+                  er2.grid_forget()
 
 def opendir():
       global dir_path
