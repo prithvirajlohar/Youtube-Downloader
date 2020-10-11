@@ -17,7 +17,7 @@ root.configure(background="white")
 def verify():
       try:
             yt = YouTube(link.get())
-            Label(root,text=' '+yt.title+"\nVERIFIED ✔",fg="green").grid(row=2,column=1)
+            Label(root,text=' '+yt.title[:50]+"\nVERIFIED ✔",fg="green").grid(row=2,column=1)
       except:
             if len(link.get())<1:
                   er=Label(root,text="    Please Enter URL    ",fg="blue").grid(row=2,column=1)
